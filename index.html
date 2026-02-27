@@ -155,8 +155,8 @@
             --accent: #ffffff;
             --text: #ffffff;
             --text-dim: rgba(255, 255, 255, 0.7);
-            --bg: #0b0c10;
-            --section-bg: #11141d;
+            --bg: #000;
+            --section-bg: #000;
             --transition-speed: 0.8s;
         }
 
@@ -569,7 +569,7 @@
 
         /* ===== PROJECTS WHITE SECTION ===== */
         .background {
-            background-color: #ffffff;
+            background-color: #f8fafc;
             width: 100%;
             min-height: 100vh;
             position: relative;
@@ -593,9 +593,10 @@
         }
 
         .background .card {
-            background: rgba(11, 12, 16, 0.03);
-            border: 1px solid rgba(11, 12, 16, 0.1);
-            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.15),
+                0 0 1px rgba(0, 0, 0, 0.2);
         }
 
         .background .btn-primary {
@@ -630,7 +631,7 @@
 
         .project-type {
             font-size: 0.9rem;
-            color: #60a5fa;
+            color: #0073ff;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 15px;
@@ -706,7 +707,7 @@
             background: rgba(96, 165, 250, 0.1);
             border: 1px solid rgba(96, 165, 250, 0.2);
             border-radius: 100px;
-            color: #60a5fa;
+            color: #0073ff;
             font-size: 0.85rem;
             font-weight: 600;
         }
@@ -1014,6 +1015,216 @@
         }
 
         /* RESPONSIVE */
+        /* ===== ABOUT MODERN SECTION ===== */
+        .about-modern {
+            padding: 10rem 0;
+            background: #000;
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        .about-top-title {
+            position: sticky;
+            top: 40px;
+            z-index: 100;
+            background: #000;
+            padding: 1.5rem 0 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        .about-top-title .section-title {
+            margin-bottom: 0.5rem;
+        }
+
+        .about-timeline {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 40px 0 60px;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, transparent, var(--primary) 5%, var(--primary) 95%, transparent);
+            z-index: 1;
+        }
+
+        .about-card {
+            width: 48%;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 25px;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            backdrop-filter: blur(10px);
+            z-index: 2;
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .about-card:nth-child(odd) {
+            align-self: flex-start;
+        }
+
+        .about-card:nth-child(even) {
+            align-self: flex-end;
+            flex-direction: row-reverse;
+            margin-top: -30px;
+        }
+
+        .card-image-frame {
+            flex-shrink: 0;
+            width: 140px;
+            height: 140px;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-image-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .about-card:hover .card-image-frame img {
+            transform: scale(1.1);
+        }
+
+        .card-info {
+            flex: 1;
+        }
+
+        .about-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            background: rgba(255, 255, 255, 0.06);
+            border-color: var(--primary);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-dot {
+            position: absolute;
+            top: 25px;
+            width: 44px;
+            height: 44px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            border: 3px solid var(--primary);
+            z-index: 3;
+        }
+
+        .about-card:nth-child(odd) .card-dot {
+            right: -11.5%;
+            transform: translateX(50%);
+        }
+
+        .about-card:nth-child(even) .card-dot {
+            left: -11.5%;
+            transform: translateX(-50%);
+        }
+
+        .card-header {
+            margin-bottom: 12px;
+        }
+
+        .card-label {
+            font-size: 0.85rem;
+            color: var(--secondary);
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .card-desc {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--text-dim);
+        }
+
+        .about-bottom-bio {
+            text-align: center;
+            max-width: 800px;
+            margin: 6rem auto 0;
+            padding-top: 4rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .bio-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-dim);
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight-text {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Responsive About */
+        @media (max-width: 968px) {
+            .about-timeline {
+                padding-left: 30px;
+                align-items: flex-start;
+            }
+
+            .timeline-line {
+                left: 0;
+                transform: none;
+            }
+
+            .about-card {
+                width: 100%;
+                margin-top: 0 !important;
+                margin-bottom: 30px;
+            }
+
+            .about-card:nth-child(odd) .card-dot,
+            .about-card:nth-child(even) .card-dot {
+                left: -52px;
+                right: auto;
+                transform: none;
+                width: 38px;
+                height: 38px;
+                font-size: 1.1rem;
+            }
+        }
+
         @media (max-width: 768px) {
             #contact {
                 padding: 80px 6%;
@@ -1025,6 +1236,7 @@
             min-height: auto;
             padding-top: 100px;
             padding-bottom: 30px;
+            background: #000;
         }
 
         footer {
@@ -1117,7 +1329,7 @@
         }
 
         .landing-page-wrapper {
-            background-color: #111111;
+            background-color: #000;
             width: 100%;
             min-height: 100vh;
             display: flex;
@@ -1134,7 +1346,7 @@
             width: 100%;
             height: 70px;
             z-index: 10000;
-            background: #111111;
+            background: #000;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1245,7 +1457,7 @@
                 height: auto;
                 flex-direction: column;
                 gap: 20px;
-                background: #111111;
+                background: #000;
             }
 
             .header-content {
@@ -1383,9 +1595,43 @@
                 height: auto;
             }
 
-            .section-why h1 {
-                text-align: center;
-                margin: 0 auto 40px;
+            /* ABOUT SECTION MOBILE */
+            .about-container {
+                padding: 0 15px;
+            }
+
+            .about-timeline {
+                padding: 20px 0 40px;
+                gap: 30px;
+            }
+
+            .timeline-line {
+                left: 20px;
+                transform: none;
+            }
+
+            .about-card {
+                width: calc(100% - 40px) !important;
+                margin-left: 40px !important;
+                align-self: flex-start !important;
+                flex-direction: column !important;
+                padding: 20px;
+                gap: 15px;
+                margin-top: 0 !important;
+            }
+
+            .card-image-frame {
+                width: 100%;
+                height: 180px;
+            }
+
+            .about-card .card-dot {
+                left: -20px !important;
+                right: auto !important;
+                transform: translateX(-50%) !important;
+                width: 36px;
+                height: 36px;
+                font-size: 1.1rem;
             }
 
             .float-area {
@@ -1466,19 +1712,13 @@
                         </a>
 
 
-                        <a href="#" class="social-icon">
+                        <a href="https://github.com/samueldevanathan0208" class="social-icon">
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.335 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
                             </svg>
                         </a>
-                        <a href="#" class="social-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="2" width="20" height="20" rx="5" />
-                                <circle cx="12" cy="12" r="4" />
-                                <circle cx="18" cy="6" r="1.5" fill="currentColor" />
-                            </svg>
-                        </a>
+
 
                     </div>
 
@@ -1492,8 +1732,8 @@
                 <h1>Samuel Devanathan</h1>
 
                 <div class="role" style="display: flex;">
-                    <span class="role-text">Frontend Developer</span>
-                    <h4 style="margin-left: 10px;">Student</h4>
+                    <span class="role-text">Frontend Developer Student</span>
+
                 </div>
 
                 <p class="tagline">
@@ -1519,29 +1759,160 @@
             </div>
         </main>
     </div>
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>I’m currently studying at <span class="highlight neon-text">Freshworks Software Academy</span>, where
-                    I’m learning how real-world software is built and used in the industry.</p>
-
-                <p>I completed my <span class="highlight neon-text">Diploma in Mechanical Engineering</span>, but during
-                    that time I discovered my interest in building digital products and solving problems through
-                    technology. That curiosity led me to join <span class="highlight neon-text">Freshworks Software
-                        Academy</span>, where I’m gaining hands-on experience with modern web technologies and industry
-                    practices.</p>
-
-                <p>My journey combines an engineering problem-solving mindset with practical software development
-                    skills. I enjoy building <span class="highlight neon-text">scalable, user-friendly
-                        applications</span> and working on projects that solve real-world problems, not just academic
-                    ones.</p>
-
-                <p>I believe in continuous learning, writing clean code, and improving a little every day. Outside of
-                    development, I enjoy <span class="highlight neon-text">singing and exploring music</span>, which
-                    helps me stay creative and balanced. My goal is to grow as a software developer and contribute
-                    meaningfully to <span class="highlight neon-text">innovative teams</span>.</p>
+    <section id="about" class="about-modern">
+        <div class="about-container">
+            <div class="about-top-title">
+                <h2 class="section-title">My Journey & Achievements</h2>
             </div>
+
+            <div class="about-timeline">
+                <div class="timeline-line"></div>
+
+                <!-- Milestone 1: Mechanical Engineering -->
+                <div class="about-card">
+                    <div class="card-dot">✨</div>
+                    <div class="card-image-frame">
+                        <img src="mech.png" alt="Mechanical Engineering">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">The Foundation</span>
+                            <h3 class="card-title">Mechanical Engineering</h3>
+                        </div>
+                        <p class="card-desc">I started with a Diploma in Mechanical Engineering to understand how things
+                            are built. It taught me logical problem-solving, which helps me in coding every day.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 2: Freshworks Academy -->
+                <div class="about-card">
+                    <div class="card-dot">💡</div>
+                    <div class="card-image-frame">
+                        <img src="dev.jpeg" alt="Freshworks Academy">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">The Turning Point</span>
+                            <h3 class="card-title">Freshworks Software Academy</h3>
+                        </div>
+                        <p class="card-desc">Joining Freshworks Software Academy was my turning point into tech. I
+                            learned industry tools and practices by working on real-world projects.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 3: English (NEW) -->
+                <div class="about-card">
+                    <div class="card-dot">🚀</div>
+                    <div class="card-image-frame">
+                        <img src="eng.png" alt="English Certificate">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">Communication Skills</span>
+                            <h3 class="card-title">English</h3>
+                        </div>
+                        <p class="card-desc">I earned the EF SET English B1 certification, which improved my confidence
+                            in communication.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 4: Product Building Challenge -->
+                <div class="about-card">
+                    <div class="card-dot">🥈</div>
+                    <div class="card-image-frame">
+                        <img src="project.jpeg" alt="Product Building Challenge">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">Outstanding Presentation</span>
+                            <h3 class="card-title">Product Building Challenge</h3>
+                        </div>
+                        <p class="card-desc">In the Product Building Challenge, my team secured second place, where I
+                            learned product thinking and presentation skills.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 5: Workplace Study Presentation -->
+                <div class="about-card">
+                    <div class="card-dot">🥈</div>
+                    <div class="card-image-frame">
+                        <img src="work.png" alt="Workplace Study Presentation">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">FSSA Lifeskills Project</span>
+                            <h3 class="card-title">Workplace Study Presentation</h3>
+                        </div>
+                        <p class="card-desc">In the Workplace Study Presentation, we again secured second prize, which
+                            helped me understand professional environments and teamwork.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 6: Team Player -->
+                <div class="about-card">
+                    <div class="card-dot">🤝</div>
+                    <div class="card-image-frame">
+                        <img src="team.jpeg" alt="Team Player">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">Collaboration</span>
+                            <h3 class="card-title">Team Player</h3>
+                        </div>
+                        <p class="card-desc">I strongly believe in collaboration and actively contribute during
+                            discussions and reviews.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 7: Problem Solver -->
+                <div class="about-card">
+                    <div class="card-dot">🧩</div>
+                    <div class="card-image-frame">
+                        <img src="hack.png" alt="Problem Solver">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">Logical Thinking</span>
+                            <h3 class="card-title">Problem Solver</h3>
+                        </div>
+                        <p class="card-desc">I regularly practice DSA problems on HackerRank to improve my coding
+                            efficiency. I focus on optimizing time and space complexity.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 9: Growing as a Developer -->
+                <div class="about-card">
+                    <div class="card-dot">🏆</div>
+                    <div class="card-image-frame">
+                        <img src="develop.png" alt="Growing as a Developer">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">Future Outlook</span>
+                            <h3 class="card-title">Growing as a Developer</h3>
+                        </div>
+                        <p class="card-desc">I consistently practice and improve daily because I believe small steps
+                            lead to big growth.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone 10: Creative Balance -->
+                <div class="about-card">
+                    <div class="card-dot">🎨</div>
+                    <div class="card-image-frame">
+                        <img src="image.png" alt="Creative Balance">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">Beyond Code</span>
+                            <h3 class="card-title">Creative Balance</h3>
+                        </div>
+                        <p class="card-desc">Apart from coding, I enjoy playing guitar and singing, which keeps my
+                            creativity active.</p>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </section>
@@ -1640,14 +2011,12 @@
                 <section class="text-section" id="project2">
                     <div class="project-type">Full Stack Web Application</div>
                     <h2>Skillnest (LMS)</h2>
-                    <p>A comprehensive full-stack LMS application with user authentication, course management, and
-                        database
-                        integration. Built with a focus on security, scalability, and user experience.</p>
+                    <p>It provides courses, interview preparation, personal notes, progress tracking, certificate
+                        generation, and an AI chatbot for instant doubt solving.</p>
 
                     <ul class="feature-list">
                         <li>User authentication with login & signup functionality</li>
                         <li>Course listing and management system</li>
-                        <li>Role-based access control (Admin/User)</li>
                         <li>Backend API integration with database</li>
                         <li>Responsive design for all devices</li>
                     </ul>
@@ -1732,22 +2101,20 @@
         <div class="float-area">
 
             <!-- LEFT COLUMN -->
-            <div class="card-why primary" style="top:18%; left:10%;">Industry-Grade Training</div>
-            <div class="card-why" style="top:30%; left:12%;">Strong Fundamentals</div>
-            <div class="card-why secondary" style="top:42%; left:8%;">Clean Code Practices</div>
-            <div class="card-why" style="top:56%; left:11%;">Adaptable Engineer</div>
+            <div class="card-why primary" style="top:18%; left:10%;">Learning Everyday</div>
+            <div class="card-why" style="top:35%; left:12%;">Building Real Projects</div>
+            <div class="card-why secondary" style="top:52%; left:8%;">Strong Fundamentals</div>
 
             <!-- CENTER COLUMN -->
-            <div class="card-why secondary" style="top:22%; left:40%;">Real-World Projects</div>
-            <div class="card-why primary" style="top:34%; left:44%;">Fast Learner</div>
-            <div class="card-why" style="top:48%; left:38%;">Scalable Architecture</div>
-            <div class="card-why primary" style="top:62%; left:43%;">MERN Stack Learner</div>
+            <div class="card-why secondary" style="top:22%; left:40%;">Curious & Consistent</div>
+            <div class="card-why primary" style="top:38%; left:44%;">Clean & Simple Code</div>
+            <div class="card-why" style="top:54%; left:38%;">Fast Learner</div>
+            <div class="card-why primary" style="top:68%; left:42%;">Team Friendly</div>
 
             <!-- RIGHT COLUMN -->
-            <div class="card-why" style="top:20%; left:70%;">Problem Solver</div>
-            <div class="card-why primary" style="top:32%; left:74%;">Production-Ready Code</div>
-            <div class="card-why secondary" style="top:46%; left:69%;">System Thinking</div>
-            <div class="card-why" style="top:60%; left:73%;">Team Collaboration</div>
+            <div class="card-why" style="top:20%; left:70%;">Growth Mindset</div>
+            <div class="card-why primary" style="top:38%; left:74%;">Dedicated & Focused</div>
+            <div class="card-why secondary" style="top:56%; left:69%;">Open to Feedback</div>
 
         </div>
 
@@ -1810,13 +2177,13 @@
 
         // ===== ROLE TEXT ROTATION =====
         const roles = [
-            "Frontend Developer",
-            "Backend Developer",
-            "Full-Stack Developer",
-            "UI/UX Designer",
-            "QA Engineer",
-            "Software Developer",
-            "Web Developer"
+            "Frontend Developer Student",
+            "Backend Developer Student",
+            "Full-Stack Developer Student",
+            "UI/UX Designer Student",
+            "Software Developer Student",
+            "Web Developer Student",
+            "MERN Stack Learner"
 
         ];
 

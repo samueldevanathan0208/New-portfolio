@@ -1,0 +1,149 @@
+  <div class="about-card">
+                    <div class="card-dot">✨</div>
+                    <div class="card-image-frame">
+                        <img src="mech.png" alt="Mechanical Engineering">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">The Foundation</span>
+                            <h3 class="card-title">Mechanical Engineering</h3>
+                        </div>
+                        <p class="card-desc">Completed my Diploma in Mechanical Engineering, where I developed a strong
+                            analytical mindset and discovered my passion for building things from scratch.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone - Freshworks Journey -->
+                <div class="about-card">
+                    <div class="card-dot">💡</div>
+                    <div class="card-image-frame">
+                        <img src="dev.jpeg" alt="Freshworks Academy">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">The Turning Point</span>
+                            <h3 class="card-title">Freshworks Software Academy</h3>
+                        </div>
+                        <p class="card-desc">
+                            Transitioned into tech through Freshworks Software Academy, building real-world
+                            projects while learning industry practices from experienced engineers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Milestone - Problem Solver -->
+                <div class="about-card">
+                    <div class="card-dot">🧩</div>
+                    <div class="card-image-frame">
+                        <img src="ps.jpeg   " alt="Problem Solver">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">Logical Thinking</span>
+                            <h3 class="card-title">Problem Solver</h3>
+                        </div>
+                        <p class="card-desc">Applying an engineering mindset to software development, ensuring code is
+                            efficient, scalable, and built on solid architectural principles.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone - Static Website Excellence -->
+                <div class="about-card">
+                    <div class="card-dot">📜</div>
+                    <div class="card-image-frame">
+                        <img src="certificate.jpeg" alt="Static Website Excellence">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">Performance Recognition</span>
+                            <h3 class="card-title">Static Website Excellence</h3>
+                        </div>
+                        <p class="card-desc">Awarded a certificate of excellence for outstanding performance and
+                            high-quality delivery in static website development projects.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone - Product Building Challenge -->
+                <div class="about-card">
+                    <div class="card-dot">�</div>
+                    <div class="card-image-frame">
+                        <img src="project.jpeg" alt="Product Building Challenge">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">FSSA Lifeskills Project</span>
+                            <h3 class="card-title">Product Building Challenge</h3>
+                        </div>
+                        <p class="card-desc">Secured Second Prize in a team presentation at Product Building Challenge,
+                            demonstrating collaborative problem-solving and innovative thinking.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone - Workplace Study Presentation -->
+                <div class="about-card">
+                    <div class="card-dot">🥈</div>
+                    <div class="card-image-frame">
+                        <img src="work.png" alt="Workplace Study Presentation">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">FSSA Lifeskills Project</span>
+                            <h3 class="card-title">Workplace Study Presentation</h3>
+                        </div>
+                        <p class="card-desc">Secured Second Prize for a team-based Workplace study presentation,
+                            highlighting effective communication and professional workplace analysis.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone - Team Player -->
+                <div class="about-card">
+                    <div class="card-dot">🤝</div>
+                    <div class="card-image-frame">
+                        <img src="team.jpeg" alt="Team Player">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">Collaboration</span>
+                            <h3 class="card-title">Team Player</h3>
+                        </div>
+                        <p class="card-desc">Believing that the best products are built together. I thrive in
+                            environments where ideas are shared and peer reviews drive excellence.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone - Creative Balance -->
+                <div class="about-card">
+                    <div class="card-dot">🎨</div>
+                    <div class="card-image-frame">
+                        <img src="image.png" alt="Creative Balance">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">Beyond Code</span>
+                            <h3 class="card-title">Creative Balance</h3>
+                        </div>
+                        <p class="card-desc">Passionate about music and singing, which keeps my creativity alive and
+                            helps me approach coding challenges with a fresh, balanced perspective.</p>
+                    </div>
+                </div>
+
+                <!-- Milestone - Growing as a Developer -->
+                <div class="about-card">
+                    <div class="card-dot">🏆</div>
+                    <div class="card-image-frame">
+                        <img src="develop.png" alt="Growing as a Developer">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-header">
+                            <span class="card-label">Future Outlook</span>
+                            <h3 class="card-title">Growing as a Developer</h3>
+                        </div>
+                        <p class="card-desc">Moving forward with a commitment to continuous learning, aiming to
+                            contribute to innovative teams and build world-class software daily.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
